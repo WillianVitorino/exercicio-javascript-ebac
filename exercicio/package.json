@@ -1,0 +1,16 @@
+{
+  "name": "exercicios EBAC",
+  "version": "1.0.0",
+  "main": "exercicio-array.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jest": "^28.1.3"
+  },
+  "devDependencies": {}
+}

@@ -1,12 +1,12 @@
-var aMdc = 58, bMdc = 6, temp;
+var calculoMdc = (aMdc, bMdc, resultado) => {
+    var resultado;
+    while (bMdc != 0){
+        temp = aMdc % bMdc;
+        aMdc = bMdc;
+        bMdc = temp;
+    }
+    return resultado;
 
-while (bMdc != 0){
-    temp = aMdc % bMdc;
-    aMdc = bMdc;
-    bMdc = temp;
-    console.log(temp)    
 }
 
-console.log("-------------------------------------");
-console.log("O MDC é " + aMdc); 
-console.log("-------------------------------------");
+module.exports = {calculoMdc}

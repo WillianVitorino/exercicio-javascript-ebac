@@ -1,16 +1,19 @@
-var numeros = [79, 23, 3, 18, 16, 66, 97, 48, 19, 44];
+var indiceMaior = (array) => {
+    var maiorIndice = Math.max.apply(null, array)
+    return array.indexOf(maiorIndice)
+}
 
-var valorMenor = Math.min.apply(null, numeros);
-var indiceMenor = numeros.indexOf(valorMenor);
-var valorMaior = Math.max.apply(null, numeros);
-var indiceMaior = numeros.indexOf(valorMaior);
+var indiceMenor = (array) => {
+    var menorIndice = Math.min.apply(null, array)
+    return array.indexOf(menorIndice)
+}
 
-console.log("-------------------------------------");
-console.log("Valor menor " + valorMenor);
-console.log("-------------------------------------");
-console.log("Indice menor " + indiceMenor);
-console.log("-------------------------------------");
-console.log("Valor maior " + valorMaior);
-console.log("-------------------------------------");
-console.log("Indice maior " + indiceMaior);
-console.log("-------------------------------------");
+var valorMaior = (num) => {
+    return Math.max.apply(null,num)
+}
+
+var valorMenor = (num) => {
+    return Math.min.apply(null,num)
+}
+
+module.exports = {indiceMaior, indiceMenor, valorMaior, valorMenor}
